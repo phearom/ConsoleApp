@@ -14,6 +14,7 @@ namespace ConsoleApp
         {
             GetStoreProcedure();
             return;
+
             var con = new OracleConnection("user id=phearom; password=123;data source=localhost:1521/db002");
             var cmd = new OracleCommand("select * from tblstudent", con);
             con.Open();
