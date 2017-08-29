@@ -8,6 +8,6 @@ namespace ConsoleApp
 {
     class DbHelper
     {
-
+        console.writeline('hello');
     }
 }
