@@ -8,5 +8,6 @@ namespace ConsoleApp
 {
     class DbConnection
     {
+
     }
 }
