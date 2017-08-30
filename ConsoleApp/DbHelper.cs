@@ -8,6 +8,9 @@ namespace ConsoleApp
 {
     class DbHelper
     {
-        console.writeline('hello');
+        public DbHelper()
+        {
+            Console.WriteLine("Constructor");
+        }
     }
 }
