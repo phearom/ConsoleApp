@@ -10,6 +10,7 @@ namespace ConsoleApp
 {
     class Program
     {
+        
         static void Main(string[] args)
         {
             var con = new OracleConnection("user id=phearom; password=123;data source=localhost:1521/db002");
@@ -42,7 +43,7 @@ namespace ConsoleApp
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
                 cmd.Parameters.Add(new OracleParameter("cursorParam", OracleDbType.RefCursor, ParameterDirection.Output));
                 var dr = cmd.ExecuteReader();
-                Console.WriteLine("Get data from Oracle using Store procedure ref cursor");
+                Console.WriteLine("Get data from Oracle using Store procedure ref cursor.");
                 while (dr.Read())
                 {
                     Console.WriteLine(dr.GetString(1));
