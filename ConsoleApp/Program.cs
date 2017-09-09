@@ -12,7 +12,6 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-
             var con = new OracleConnection("user id=phearom; password=123;data source=localhost:1521/db002");
             con.Open();
             try
